@@ -50,16 +50,20 @@ app.post('/submitEmail', async (req, res) => {
         let mailOptions = {
             from: 'focuslock2024@gmail.com',
             to: email,
-            subject: 'Robo Rental Launch',
-            text:`Exciting news! Robo Rental, the app that makes it easy to rent robots for various services, is launching soon.
-            By signing up you will be notified on the day of our apps launch.
-            Robo Rental offers a seamless solution for renting robots to assist with a variety of tasks. Stay tuned for more details!
+            subject: 'First step into breaking out of your bad habits!',
+            text:`Thank you for subscribing to Focus Lock!
+            
+            
+            Once the timer hits zero, our product will be launched and you'll be able to view our website for purchase.
 
-            Thank you for your interest.
+            Dont forget to save your discount code since you subscirbed! 
+
+            Code: BREAKING
+
+            Thank you again for your support. We are excited to have you as part of our community!
 
             Best regards,
-
-            The Robo Rental Team`,
+            The Focus Lock Team`,
         };
         let info = await transporter.sendMail(mailOptions);
         console.log('Email sent:', info.messageId);
@@ -83,7 +87,7 @@ async function sendAllEmails() {
         let transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
-                user: 'roborental.team@gmail.com',
+                user: 'focuslock2024@gmail.com',
                 pass: process.env.EMAIL_PASSWORD
             }
         });
