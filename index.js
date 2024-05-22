@@ -39,7 +39,7 @@ app.post('/submitEmail', async (req, res) => {
         let transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
-                user: 'roborental.team@gmail.com',
+                user: 'focuslock2024@gmail.com',
                 pass: process.env.EMAIL_PASSWORD
             }
         });
@@ -48,7 +48,7 @@ app.post('/submitEmail', async (req, res) => {
             return;
         }
         let mailOptions = {
-            from: 'roborental.team@gmail.com',
+            from: 'focuslock2024@gmail.com',
             to: email,
             subject: 'Robo Rental Launch',
             text:`Exciting news! Robo Rental, the app that makes it easy to rent robots for various services, is launching soon.
@@ -94,7 +94,7 @@ async function sendAllEmails() {
 
             // Email options
             let mailOptions = {
-                from: 'roborental.team@gmail.com',
+                from: 'focuslock2024@gmail.com',
                 to: email,
                 subject: 'Robo Rental Launched',
                 text: `We are thrilled to announce that Robo Rental, the app that makes it easy to rent robots for various services, has officially launched!
