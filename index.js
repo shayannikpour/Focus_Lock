@@ -57,7 +57,7 @@ app.post('/submitEmail', async (req, res) => {
 
             \nThank you again for your support. We are excited to have you as part of our community!\n
 
-            Best regards,
+            Best regards,\n
             The Focus Lock Team`,
         };
         let info = await transporter.sendMail(mailOptions);
