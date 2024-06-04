@@ -53,9 +53,9 @@ app.post('/submitEmail', async (req, res) => {
             subject: 'First step into breaking out of your bad habits!',
             text:`Thank you for subscribing to Focus Lock!\n\nOnce the timer hits zero, our product will be launched and you'll be able to view our website for purchase.\nDont forget to save your discount code since you subscirbed! 
 
-            \nCode: BREAKING\n
+            \nDiscount Code: BREAKING
 
-            Thank you again for your support. We are excited to have you as part of our community!\n
+            \nThank you again for your support. We are excited to have you as part of our community!\n
 
             Best regards,
             The Focus Lock Team`,
