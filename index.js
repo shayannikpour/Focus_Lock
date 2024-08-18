@@ -51,7 +51,7 @@ app.post('/submitEmail', async (req, res) => {
             from: 'focuslock2024@gmail.com',
             to: email,
             subject: 'First step into breaking out of your bad habits!',
-            text:`Thank you for subscribing to Focus Lock!\n\nOnce the timer hits zero, our product will be launched and you'll be able to view our website for purchase.\n\nDont forget to save your discount code since you subscirbed\n\nDiscount Code: BREAKING\n\nThank you again for your support. We are excited to have you as part of our community!\n\nBest regards,\nThe Focus Lock Team`,
+            text:`Thank you for subscribing to Focus Lock!\n\nOnce the timer hits zero, our product will be launched and you'll be able to view our website for purchase.\n\nDont forget to save your discount code since you subscirbed\n\nDiscount Code: UNIQUEMIND\n\nThank you again for your support. We are excited to have you as part of our community!\n\nBest regards,\nThe Focus Lock Team`,
         };
         let info = await transporter.sendMail(mailOptions);
         console.log('Email sent:', info.messageId);
